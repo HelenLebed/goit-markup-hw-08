@@ -1,0 +1,33 @@
+.propositions__items {
+    position: relative;
+
+    & > .propositions__image-overlay {
+        position: absolute;
+        background-color: var(--bg-image-overlay);
+        bottom: 0px;
+        overflow: hidden;
+        width: 370px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--secondary-font-color);
+    }
+}
+
+.propositions__list {
+    display: flex;
+    justify-content: space-between;
+}
+.propositions__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--primary-font-color);
+    margin-bottom: 50px;
+}

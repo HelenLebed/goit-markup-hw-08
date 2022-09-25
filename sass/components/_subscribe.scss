@@ -1,0 +1,58 @@
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subscribe__form {
+    display: flex;
+}
+.footer-subscribe__input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: var(--secondary-font-color);
+
+    &:hover {
+        border-color: var(--secondary-font-color);
+        transition-property: border-color;
+        transition-duration: var(--transition-time);
+        transition-timing-function: var(--transition-function);
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--bottom-address-tel-mail-color);
+    }
+}
+
+.footer-subscribe__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-logo-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--secondary-font-color);
+    margin-left: 12px;
+    padding: 10px 28px;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px var(--btn-box-shadow-color);
+    transition-property: background-color;
+    transition-duration: var(--transition-time);
+    transition-timing-function: var(--transition-function);
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        background: var(--modal-open-btn-background-color);
+    }
+}

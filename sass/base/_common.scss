@@ -1,0 +1,40 @@
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-font-color);
+    background-color: var(--secondary-font-color);
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+img {
+    display: block;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+address {
+    font-style: normal;
+}

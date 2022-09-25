@@ -1,0 +1,40 @@
+.sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.order__wrap {
+    background: var(--order-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/background-image.jpg");
+
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features {
+    @extend .sections;
+}
+.propositions {
+    padding-bottom: 94px;
+}
+.our-team {
+    @extend .sections;
+    background: var(--portfolio-select-list-background-color);
+}
+.regular-clients {
+    @extend .sections;
+}
+.bottom {
+    background: var(--order-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.portfolio {
+    @extend .sections;
+}

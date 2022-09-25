@@ -1,0 +1,9 @@
+.portfolio__select-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+
+    & .portfolio__select-item:not(:last-child) {
+        margin-right: 9px;
+    }
+}
