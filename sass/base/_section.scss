@@ -8,6 +8,10 @@
         padding-bottom: 60px;
         background: var(--portfolio-select-list-background-color);
     }
+    .regular-clients {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .features {
@@ -22,11 +26,12 @@
         padding-bottom: 94px;
         background: var(--portfolio-select-list-background-color);
     }
+    .regular-clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
-// .regular-clients {
-//     @extend .sections;
-// }
 // .bottom {
 //     background: var(--order-background-color);
 //     padding-top: 60px;
