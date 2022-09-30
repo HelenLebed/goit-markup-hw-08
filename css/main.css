@@ -46,6 +46,21 @@ address {
   font-style: normal;
 }
 
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .propositions {
+    padding-bottom: 94px;
+  }
+}
 @media screen and (max-width: 479px) {
   .order__wrap {
     background: var(--order-background-color);
@@ -902,8 +917,6 @@ address {
   }
 }
 .features__list {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -994,40 +1007,44 @@ address {
     margin-right: 0;
   }
 }
-.propositions__items {
-  position: relative;
+@media screen and (max-width: 1199px) {
+  .propositions {
+    display: none;
+  }
 }
-.propositions__items > .propositions__image-overlay {
-  position: absolute;
-  background-color: var(--bg-image-overlay);
-  bottom: 0px;
-  overflow: hidden;
-  width: 370px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--secondary-font-color);
+@media screen and (min-width: 1200px) {
+  .propositions__items {
+    position: relative;
+  }
+  .propositions__items > .propositions__image-overlay {
+    position: absolute;
+    background-color: var(--bg-image-overlay);
+    bottom: 0px;
+    overflow: hidden;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-font-color);
+  }
+  .propositions__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .propositions__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--primary-font-color);
+    margin-bottom: 50px;
+  }
 }
-
-.propositions__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.propositions__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--primary-font-color);
-  margin-bottom: 50px;
-}
-
 .our-team__list {
   display: flex;
   justify-content: space-between;

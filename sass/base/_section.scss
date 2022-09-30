@@ -1,14 +1,19 @@
-// .sections {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
+@media screen and (max-width: 1199px) {
+    .features {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .features {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .propositions {
+        padding-bottom: 94px;
+    }
+}
 
-// .features {
-//     @extend .sections;
-// }
-// .propositions {
-//     padding-bottom: 94px;
-// }
 // .our-team {
 //     @extend .sections;
 //     background: var(--portfolio-select-list-background-color);
