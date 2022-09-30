@@ -4,7 +4,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
+    width: calc(100% - 30px);
+    max-width: 450px;
     min-height: 580px;
     background-color: var(--secondary-font-color);
 }
@@ -100,11 +101,12 @@
 
 .modal-form-check-field {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
     margin-bottom: 30px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--alternative-font-color);
 }
 .license-link {
@@ -133,5 +135,16 @@
     .modal-form-check:checked + .modal-form-own-checkbox & {
         display: block;
         fill: var(--secondary-font-color);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .modal {
+        min-width: 528px;
+        min-height: 580px;
+    }
+    .modal-form-check-field {
+        font-size: inherit;
+        line-height: 1.71;
+        justify-content: center;
     }
 }
