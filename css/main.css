@@ -46,35 +46,59 @@ address {
   font-style: normal;
 }
 
-.sections, .portfolio, .regular-clients, .our-team, .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 479px) {
+  .order__wrap {
+    background: var(--order-background-color);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-480.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 400px;
+  }
 }
-
-.order__wrap {
-  background: var(--order-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-image.jpg");
-  background-size: 1600px 600px;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .order__wrap {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-480-2x.jpg");
+  }
 }
-
-.propositions {
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .order__wrap {
+    background: var(--order-background-color);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-768.jpg");
+    align-items: center;
+    max-width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
-
-.our-team {
-  background: var(--portfolio-select-list-background-color);
+@media screen and (min-width: 480px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .order__wrap {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-768-2x.jpg");
+  }
 }
-
-.bottom {
-  background: var(--order-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .order__wrap {
+    background: var(--order-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-1600.jpg");
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .order__wrap {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-1600-2x.jpg");
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -174,11 +198,6 @@ address {
     color: var(--main-logo-color);
   }
   .logo_theme_dark {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--page-header-logo-color);
     margin-right: 87px;
   }
 }
@@ -863,11 +882,24 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-font-color);
-  width: 700px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .order__title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .order__title {
+    font-size: 26px;
+    line-height: 1.6;
+    max-width: 360px;
+  }
+}
 .features__box {
   display: flex;
   justify-content: center;

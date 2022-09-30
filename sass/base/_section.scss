@@ -1,40 +1,118 @@
-.sections {
-    padding-top: 94px;
-    padding-bottom: 94px;
+// .sections {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .features {
+//     @extend .sections;
+// }
+// .propositions {
+//     padding-bottom: 94px;
+// }
+// .our-team {
+//     @extend .sections;
+//     background: var(--portfolio-select-list-background-color);
+// }
+// .regular-clients {
+//     @extend .sections;
+// }
+// .bottom {
+//     background: var(--order-background-color);
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+// .portfolio {
+//     @extend .sections;
+// }
+
+@media screen and (max-width: 479px) {
+    .order__wrap {
+        background: var(--order-background-color);
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/header/header-480.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 100%;
+        height: 400px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .order__wrap {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url("../images/header/header-480-2x.jpg");
+        }
+    }
 }
 
-.order__wrap {
-    background: var(--order-background-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url("../images/background-image.jpg");
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+    .order__wrap {
+        background: var(--order-background-color);
+        padding-top: 118px;
+        padding-bottom: 118px;
 
-    background-size: 1600px 600px;
-    background-repeat: no-repeat;
-    background-position: center;
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/header/header-768.jpg");
+        align-items: center;
+        max-width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .order__wrap {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url("../images/header/header-768-2x.jpg");
+        }
+    }
 }
-.features {
-    @extend .sections;
-}
-.propositions {
-    padding-bottom: 94px;
-}
-.our-team {
-    @extend .sections;
-    background: var(--portfolio-select-list-background-color);
-}
-.regular-clients {
-    @extend .sections;
-}
-.bottom {
-    background: var(--order-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.portfolio {
-    @extend .sections;
+
+@media screen and (min-width: 1200px) {
+    .order__wrap {
+        background: var(--order-background-color);
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/header/header-1600.jpg");
+        background-size: 1600px 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .order__wrap {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url("../images/header/header-1600-2x.jpg");
+        }
+    }
 }
