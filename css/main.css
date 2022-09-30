@@ -79,6 +79,17 @@ address {
     padding-bottom: 94px;
   }
 }
+.bottom {
+  background: var(--order-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 @media screen and (max-width: 479px) {
   .order__wrap {
     background: var(--order-background-color);
@@ -519,13 +530,20 @@ address {
   height: 20px;
 }
 
+.footer-subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.footer-subscribe__form {
-  display: flex;
+.footer-subscribe__field {
+  margin-bottom: 20px;
 }
 
 .footer-subscribe__input {
@@ -575,6 +593,25 @@ address {
   background: var(--modal-open-btn-background-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe__input {
+    width: 450px;
+  }
+  .footer-subscribe {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__form {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .footer-subscribe {
+    align-items: flex-start;
+  }
+}
 .portfolio__example-list .portfolio__title {
   font-weight: 700;
   font-size: 18px;
@@ -1186,6 +1223,29 @@ address {
     height: 92px;
   }
 }
+.bottom__footer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.bottom__contact {
+  margin-bottom: 60px;
+}
+
 .footer-subscribe__title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -1216,12 +1276,7 @@ address {
 
 .bottom__wrap {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.footer-join {
-  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -1246,6 +1301,38 @@ address {
   color: var(--main-logo-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bottom__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    align-content: stretch;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottom__wrap {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .bottom__footer-wrap {
+    align-items: flex-start;
+  }
+  .bottom__list {
+    align-items: flex-start;
+  }
+  .footer-join {
+    align-items: flex-start;
+  }
+  .bottom__contact {
+    margin-bottom: 0px;
+  }
+  .footer-join {
+    margin-bottom: 0px;
+  }
+}
 .portfolio__select-list {
   display: flex;
   margin-bottom: 50px;
