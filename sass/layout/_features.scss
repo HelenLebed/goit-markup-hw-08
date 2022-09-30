@@ -1,6 +1,8 @@
 .features__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 .features__item {
@@ -36,12 +38,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .features__list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .features__item {
         width: 350px;
     }

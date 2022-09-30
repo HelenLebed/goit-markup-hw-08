@@ -3,6 +3,11 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    .our-team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: var(--portfolio-select-list-background-color);
+    }
 }
 @media screen and (min-width: 1200px) {
     .features {
@@ -12,12 +17,13 @@
     .propositions {
         padding-bottom: 94px;
     }
+    .our-team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background: var(--portfolio-select-list-background-color);
+    }
 }
 
-// .our-team {
-//     @extend .sections;
-//     background: var(--portfolio-select-list-background-color);
-// }
 // .regular-clients {
 //     @extend .sections;
 // }
