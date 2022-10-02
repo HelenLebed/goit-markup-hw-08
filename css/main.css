@@ -99,7 +99,7 @@ address {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 100%;
+    max-width: 480px;
     height: 400px;
   }
 }
@@ -115,11 +115,12 @@ address {
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-768.jpg");
     align-items: center;
-    max-width: 100%;
+    max-width: 768px;
     height: 400px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -133,15 +134,17 @@ address {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-1600.jpg");
-    max-width: 100%;
+    max-width: 1600px;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .order__wrap {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-1600-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/background-desktop@2x.jpg");
   }
 }
 .container {
@@ -315,9 +318,9 @@ address {
 .modal {
   padding: 40px;
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: calc(100% - 30px);
   max-width: 450px;
   min-height: 580px;
@@ -418,7 +421,7 @@ address {
   align-items: center;
   cursor: pointer;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 6px;
   line-height: 1.17;
   color: var(--alternative-font-color);
 }
@@ -452,10 +455,17 @@ address {
   fill: var(--secondary-font-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal-form-check-field {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 580px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .modal-form-check-field {
     font-size: inherit;
@@ -465,6 +475,7 @@ address {
 }
 .backdrop {
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   z-index: 100;
@@ -547,20 +558,24 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .footer-subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .footer-subscribe__field {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .footer-subscribe__input {
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -615,6 +630,9 @@ address {
     align-items: center;
     width: 100%;
   }
+  .footer-subscribe__field {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe__form {
@@ -623,6 +641,7 @@ address {
   }
   .footer-subscribe {
     align-items: flex-start;
+    max-width: 570px;
   }
 }
 .portfolio__example-list .portfolio__title {
@@ -698,6 +717,7 @@ address {
     left: 0;
     z-index: 100;
     width: 100%;
+    overflow: scroll;
     height: 100%;
     background-color: var(--portfolio-select-list-background-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -807,13 +827,18 @@ address {
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--main-logo-color);
   }
   .mobile-menu__social-link:not(:last-child) {
     margin-right: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__social-link {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
